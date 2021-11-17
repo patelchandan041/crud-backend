@@ -15,9 +15,6 @@ const postRoute = require('./routs/posts');
 
 app.use('/posts', postRoute);
 
-app.get('/', (req,res) =>{
-  res.send("we are at home dir")
-})
 
 mongoose.connect(process.env.DB_CONNECTION, 
 {useNewUrlParser: true,
